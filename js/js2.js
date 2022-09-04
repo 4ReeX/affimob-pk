@@ -10,6 +10,7 @@ $(".button-menu").click(function () {
     // $(".title").delay(100).toggleClass('open');
     $(".card-header").toggleClass('open-menu');
     $(".card-body").toggleClass('open-menu');
+    $(".title").toggleClass('open');
 });
 $(".nav-item").click(function () {
     $(".nav-item").removeClass('active');
@@ -17,76 +18,70 @@ $(".nav-item").click(function () {
 });
 
 // изменения правой стороны с фильтрами
-function addFilters() {
-    $(".filters").addClass('hlop');
-};
-function hideFilters() {
-    $(".filters").removeClass('hlop');
-};
-function staticFilters() {
-    $(".filters").toggleClass('hlop');
+function toggleFilters() {
     $(".filters").toggleClass('open');
-    $(".card-body").toggleClass('open-menu');
-};
-
-
+    setTimeout(startObserver, 300);
+}
+function staticFilters() {
+    $(".filters").addClass('open');
+    startObserver();
+}
 function loadContent(viewUrl) {
     $('#layout').load(viewUrl);
-
+    startObserver();
 }
-$('.button-menu').click(function(){
+$('.button-menu').click(function () {
     $('.icon-menu')
         .toggleClass('arrow-left')
         .toggleClass('arrow-right');
+    setTimeout(startObserver, 300);
 })
 
-// let mymenu;
-// mymenu = $('.main-menu');
-// let mycontent;
-// mycontent = $('.card-body');
-// let filters;
-// filters = $('.filters');
-// $(window, mymenu, mycontent, filters ).bind("resize", function(){
-//     let menuWidth;
-//     let filterWidth;
-//     let contentWidth;
-//     let browserWidth;
-//     contentWidth = $('.card-body').width();
-//     browserWidth = $(document).width();
-//     menuWidth = $('.main-menu').width();
-//     filterWidth = $('.filters').width();
-//     console.log("ширина меню:", menuWidth);
-//     console.log("ширина фильтров:", filterWidth);
-//     console.log("ширина окна: ", browserWidth);
-//     console.log("ширина card-body: ", contentWidth);
-//     contentWidth.width(browserWidth - menuWidth - filterWidth);
-// });
+// setInterval(function() {
+//     const menu = document.querySelector(".main-menu")
+//     const filters = document.querySelector(".filters")
+//     const layout = document.querySelector(".layout")
+//     const body = document.querySelector(".bodyId")
+//
+//     const observer = new ResizeObserver((entries, observer) => {
+//         for(let entry of entries){
+//             console.log(entries);
+//             let bodyWidth = entries[0].contentRect.width;
+//             let menuWidth = entries[1].contentRect.width;
+//             let filtersWidth = entries[2].contentRect.width;
+//             let layoutWidth = bodyWidth - (menuWidth + filtersWidth);
+//             layout.style.width = layoutWidth + "px";
+//             console.log("ширина меню: ", menuWidth);
+//             console.log("ширина боди: ", bodyWidth);
+//             console.log("ширина фильтров: ", filtersWidth);
+//             console.log("установить ширину лейаута в: ", layoutWidth);
+//         }
+//
+//     });
+//     observer.observe(body);
+//     observer.observe(menu);
+//     observer.observe(filters);
+// }, 1000);
 
-var pageWidth;
-pageWidth = document.documentElement.scrollWidth
-var menu;
-menu = document.querySelector('.main-menu'); //resizer
-var mycontent;
-mycontent = document.querySelector('.card-body').style; //observer
-var filters;
-filters = document.querySelector('.filters');//resizer
-var callback = function() {
-    requestAnimationFrame(function() {
-        var menuWidth = menu.offsetWidth;
-        var filtersWidth = filters.offsetWidth;
-        mycontent.width = pageWidth - (menuWidth + filtersWidth) + 'px';
-        console.log(mycontent.width)
+function startObserver() {
+    var observer = new ResizeObserver(entries => {
+        console.log(entries);
+        const menu = entries[0];
+        const filters = entries[1];
+        const body = entries[2];
+        const layout = entries[3];
+        if (layout.contentRect.width < 400) {
+            console.log(layout.contentRect.width);
+            console.log("тут надо назначить ширину layout")
+        }
+        else {
+            layout.target.style.width = body.contentBoxSize[0].inlineSize - filters.contentBoxSize[0].inlineSize - menu.contentBoxSize[0].inlineSize + "px";
+        }
     });
-};
+    observer.observe(document.querySelector(".main-menu"));
+    observer.observe(document.querySelector(".filters"));
+    observer.observe(document.querySelector(".bodyId"));
+    observer.observe(document.querySelector(".layout"));
+}
 
-let MutationObserver = window.MutationObserver ||
-    window.WebKitMutationObserver ||
-    window.MozMutationObserver
-
-let observer = new MutationObserver(callback)
-
-observer.observe(element, {
-    attributes: true,
-    attributeFilter: ['style'],
-    attributeOldValue: true
-})
+$(window).ready(startObserver);

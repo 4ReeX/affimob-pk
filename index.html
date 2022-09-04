@@ -3,135 +3,788 @@
 <head>
     <meta charset="UTF-8">
     <title>Affimob</title>
-    <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="css/menu.css">
     <meta name="viewport" content="width=device-width">
 
 </head>
-<body onload="loadContent('stat.html'); return false;">
-<div class="header">
-    <div class="left-side">
-        <div class="block flex-start">
-            <div class="title open">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 386.97143 398.35294">
-                    <defs>
-                        <style>
-                            .cls-1 {
-                                fill: #ffffff;
-                            }
-                        </style>
-                    </defs>
-                    <title>Ресурс 3</title>
-                    <g id="Слой_2" data-name="Слой 2">
-                        <g id="Слой_1-2" data-name="Слой 1">
-                            <g>
-                                <polygon class="cls-1" points="0 398.353 386.971 4.878 21.137 240.638 0 398.353"/>
-                                <g>
-                                    <path class="cls-1"
-                                          d="M309.67344,128.385A127.54461,127.54461,0,0,1,195.92461,313.80456c-.24214,0-.48032-.01667-.72206-.01826l-34.13144,55.28005a187.12812,187.12812,0,0,0,34.8535,3.27171c102.81826,0,186.169-83.35037,186.169-186.169A185.33941,185.33941,0,0,0,343.813,73.09145Z"/>
-                                    <path class="cls-1"
-                                          d="M72.07008,325.14717l41.052-41.96456A127.558,127.558,0,1,1,291.10128,101.24592l41.04363-41.95583A185.64856,185.64856,0,0,0,195.92461,0C93.10635,0,9.75558,83.35037,9.75558,186.169A185.69534,185.69534,0,0,0,72.07008,325.14717Z"/>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </svg>
-                <img src="img/invert-affimob.svg" alt="" class="logo-text">
+<body onload="loadContent('stat.html'); return false;" class="bodyId" id="bodyId">
+<div class="main-menu open" id="main-menu">
+    <div class="button-menu">
+        <div class="arrow-left icon-menu"></div>
+    </div>
+    <div class="title open" onclick="resize();">
+        <img src="img/orange-logo.svg" alt="" class="logo-icon">
+        <img src="img/invert-affimob.svg" alt="" class="logo-text">
+    </div>
+    <div class="nav-items">
+        <div class="nav-item">
+            <div class="nav-icon">
+                <img src="img/dashboard.png" alt="">
             </div>
-
-
+            <div class="nav-text">Дашборд</div>
         </div>
-        <div class="block flex-end">
-            <div class="info">
-                <div class="cap">
-                    КАПА
-                </div>
+        <div class="nav-item" onclick="loadContent('stat.html'); return false;">
+            <div class="nav-icon">
+                <img src="img/anal.png" alt="">
+            </div>
+            <div class="nav-text">Аналитика</div>
+        </div>
+        <div class="nav-item" onclick="loadContent('offers.html'); return false;">
+            <div class="nav-icon">
+                <img src="img/offers.png" alt="">
+            </div>
+            <div class="nav-text">Офферы</div>
+        </div>
+        <div class="nav-item">
+            <div class="nav-icon">
+                <img src="img/potok.png" alt="">
+            </div>
+            <div class="nav-text">Потоки</div>
+        </div>
+        <div class="nav-item mobile-no">
+            <div class="nav-icon">
+                <img src="img/wallet.png" alt="">
+            </div>
+            <div class="nav-text">Финансы</div>
+        </div>
+        <div class="nav-item">
+            <div class="nav-icon">
+                <img src="img/news.png" alt="">
+            </div>
+            <div class="nav-text">Уведомления</div>
+        </div>
+        <div class="nav-item mobile-no">
+            <div class="nav-icon">
+                <img src="img/rabs.png" alt="">
+            </div>
+            <div class="nav-text">Рефералы</div>
+        </div>
+        <div class="nav-item">
+            <div class="nav-icon">
+                <img src="img/instruments.png" alt="">
+            </div>
+            <div class="nav-text">Инструменты</div>
+        </div>
+    </div>
+
+</div>
+<div class="content">
+    <div class="header">
+        <div class="only-mobile-logo">
+            <img src="img/orange-logo.svg" alt="" class="logo-icon">
+        </div>
+        <div class="hamburger-menu hide">
+            <div class="hamburger-menu-items">
                 <div class="balance">
                     <div class="icona">
                         <img src="img/wallet.png" alt="">
                     </div>
-                    23 024 244 руб.
+                    <span class="amount"> 23 024 244 руб.</span>
                 </div>
                 <div class="mail">
                     <div class="icona">
                         <img src="img/user.png" alt="">
                     </div>
-                    affimob@affimob.com | 123456
+                    <span class="amount">affimob@affimob.com | 123456</span>
                 </div>
-            </div>
-
-            <div class="nav-footer">
-                <div class="nav-footer-icon"><img src="img/sun.png" alt=""></div>
-                <div class="nav-footer-icon"><img src="img/support.png" alt=""></div>
-                <div class="nav-footer-icon"><img src="img/exit.png" alt=""></div>
             </div>
         </div>
-    </div>
-</div>
-<div class="content">
-    <div class="main-menu open" id="main-menu">
-        <div class="nav-items">
-            <div class="nav-item">
-                <div class="nav-icon">
-                    <img src="img/dashboard.png" alt="">
-                </div>
-                <div class="nav-text">Дашборд</div>
 
-            </div>
-            <div class="nav-item" onclick="loadContent('stat.html'); return false;">
-                <div class="nav-icon">
-                    <img src="img/anal.png" alt="">
-                </div>
-                <div class="nav-text">Аналитика</div>
-            </div>
-            <div class="nav-item" onclick="loadContent('offers.html'); return false;">
-                <div class="nav-icon">
-                    <img src="img/offers.png" alt="">
-                </div>
-                <div class="nav-text">Офферы</div>
-            </div>
-            <div class="nav-item">
-                <div class="nav-icon">
-                    <img src="img/potok.png" alt="">
-                </div>
-                <div class="nav-text">Потоки</div>
-            </div>
-            <div class="nav-item">
-                <div class="nav-icon">
+        <div class="info">
+            <div class="balance">
+                <div class="icona">
                     <img src="img/wallet.png" alt="">
                 </div>
-                <div class="nav-text">Финансы</div>
+                <span class="amount"> 23 024 244 руб.</span>
             </div>
-            <div class="nav-item">
-                <div class="nav-icon">
-                    <img src="img/news.png" alt="">
+            <div class="mail">
+                <div class="icona">
+                    <img src="img/user.png" alt="">
                 </div>
-                <div class="nav-text">Уведомления</div>
-            </div>
-            <div class="nav-item">
-                <div class="nav-icon">
-                    <img src="img/rabs.png" alt="">
-                </div>
-                <div class="nav-text">Рефералы</div>
-            </div>
-            <div class="nav-item">
-                <div class="nav-icon">
-                    <img src="img/instruments.png" alt="">
-                </div>
-                <div class="nav-text">Инструменты</div>
+                <span class="amount">affimob@affimob.com | 123456</span>
             </div>
         </div>
+        <div class="nav-footer">
+            <div class="nav-footer-icon"><img src="img/sun.png" alt=""></div>
+            <div class="nav-footer-icon"><img src="img/support.png" alt=""></div>
+            <div class="nav-footer-icon"><img src="img/exit.png" alt=""></div>
+        </div>
+        <div class="hamburger-menu-icon">
+            <img src="img/menu-hamb.png" alt="">
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="card">
+            <div class="card-header open-menu">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active show" data-toggle="tab" href="#" role="tab"
+                       aria-controls="custom-nav-home" aria-selected="true">Статистика</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#" role="tab" aria-controls="custom-nav-home"
+                       aria-selected="true">Анализ трафика</a>
+                    <div class="cap">
+                        КАПА
+                    </div>
+                </div>
+                <div class="block-filters">
+                    <div class="search open">
+                        <div class="icon-search">
+                            <img src="img/search.svg" alt="" class="src">
+                        </div>
+                        <input type="search" placeholder="Искать..." class="top-search">
+                        <div class="results">
+                            <div class="txt">
+                                Совпадений:
+                            </div>
+                            <div class="amount">15</div>
+                        </div>
+                    </div>
+                    <div class="filter-buttons">
+                        <div class="xls-btn">
+                            <img src="img/xls.png" alt="">
+                        </div>
+                        <div class="setup-btn">
+                            <img src="img/setup.png" alt="">
+                        </div>
+                        <div class="filters-btn" onclick="toggleFilters();" id="filtBtn">
+                            <img src="img/filter.png" alt="" id="fbtn">
+                        </div>
+                    </div>
+                </div>
 
-    </div>
-    <div class="button-menu">
-        <div class="arrow-left icon-menu"></div>
-    </div>
-    <div class="card" id="layout">
 
+            </div>
+            <div class="card-body">
+                <div class="layout" id="layout"></div>
+                <div class="filters" onmouseenter="staticFilters();" id="filters">
+                    <div class="nav-filter">
+                        <div class="jss8 jss19">
+                            <div class=" css-2b097c-container">
+                                <div class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"><label
+                                        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+                                        data-shrink="true">Дата</label>
+                                    <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl">
+                                        <div aria-invalid="false" readonly="" type="text"
+                                             class="MuiInputBase-input MuiInput-input jss9 jss20">
+                                            <div class="jss10"><p
+                                                    class="MuiTypography-root jss12 MuiTypography-body1 MuiTypography-colorTextSecondary">
+                                                -</p>
+                                                <div class="css-1tna5xz">
+                                                    <div class="" style="display: inline-block;">
+                                                        <input autocapitalize="none"
+                                                               autocomplete="off" autocorrect="off"
+
+                                                               spellcheck="false" tabindex="0"
+                                                               type="text" aria-autocomplete="list"
+                                                               value=""
+                                                               style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
+                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" css-1wy0on6"><span
+                                                    class=" css-1okebmr-indicatorSeparator"></span>
+                                                <div aria-hidden="true" class=" css-sp6uef-indicatorContainer">
+                                                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true"
+                                                         focusable="false"
+                                                         class="css-19bqh2r">
+                                                        <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jss8">
+                            <div class=" css-2b097c-container">
+                                <div class="nowrap-custom"><label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl
+ MuiInputLabel-animated MuiInputLabel-shrink" data-shrink="true">Период</label>
+                                    <button class="icon-btn" title="Сегодня"><i class="date-icon icon-day"></i></button>
+                                    <button class="icon-btn" title="Вчера"><i class="date-icon icon-minus-day"></i>
+                                    </button>
+                                    <button class="icon-btn" title="2 дня"><i class="date-icon icon-2"></i></button>
+                                    <button class="icon-btn selected" title="7 дней"><i class="date-icon icon-7"></i>
+                                    </button>
+                                    <button class="icon-btn" title="Текущий месяц"><i class="date-icon icon-m"></i>
+                                    </button>
+                                    <button class="icon-btn" title="Прошедший месяц"><i
+                                            class="date-icon icon-minus-m"></i>
+                                    </button>
+                                    <button class="icon-btn" title="30 дней"><i class="date-icon icon-30"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jss8 jss16">
+                            <div class=" css-2b097c-container">
+                                <div class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"><label
+                                        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+                                        data-shrink="true" >Группа-1</label>
+                                    <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl">
+                                        <div aria-invalid="false" readonly="" type="text"
+                                             class="MuiInputBase-input MuiInput-input jss9 jss17">
+                                            <div class="jss10"><p
+                                                    class="MuiTypography-root jss15 jss18 MuiTypography-body1">По
+                                                дням</p>
+                                                <div class="css-1tna5xz">
+                                                    <div class="" style="display: inline-block;"><input
+                                                            autocapitalize="none"
+                                                            autocomplete="off"
+                                                            autocorrect="off"
+                                                            id="react-select-2-input"
+                                                            spellcheck="false"
+                                                            tabindex="0"
+                                                            type="text"
+                                                            aria-autocomplete="list"
+                                                            value=""
+                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
+                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" css-1wy0on6">
+                                                <div aria-hidden="true" class=" css-sp6uef-indicatorContainer">
+                                                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true"
+                                                         focusable="false"
+                                                         class="css-19bqh2r">
+                                                        <path d="M14.348 14.849c-0.469 0.469-1.229 0.469-1.697 0l-2.651-3.030-2.651 3.029c-0.469 0.469-1.229 0.469-1.697 0-0.469-0.469-0.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-0.469-0.469-0.469-1.228 0-1.697s1.228-0.469 1.697 0l2.652 3.031 2.651-3.031c0.469-0.469 1.228-0.469 1.697 0s0.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c0.469 0.469 0.469 1.229 0 1.698z"></path>
+                                                    </svg>
+                                                </div>
+                                                <span class=" css-1okebmr-indicatorSeparator"></span>
+                                                <div aria-hidden="true" class=" css-sp6uef-indicatorContainer">
+                                                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true"
+                                                         focusable="false"
+                                                         class="css-19bqh2r">
+                                                        <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jss8 jss19">
+                            <div class=" css-2b097c-container">
+                                <div class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"><label
+                                        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+                                        data-shrink="true" >Группа-2</label>
+                                    <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl">
+                                        <div aria-invalid="false" readonly="" type="text"
+                                             class="MuiInputBase-input MuiInput-input jss9 jss20">
+                                            <div class="jss10"><p
+                                                    class="MuiTypography-root jss12 MuiTypography-body1 MuiTypography-colorTextSecondary">
+                                                -</p>
+                                                <div class="css-1tna5xz">
+                                                    <div class="" style="display: inline-block;"><input
+                                                            autocapitalize="none"
+                                                            autocomplete="off"
+                                                            autocorrect="off"
+
+                                                            spellcheck="false"
+                                                            tabindex="0"
+                                                            type="text"
+                                                            aria-autocomplete="list"
+                                                            value=""
+                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
+                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" css-1wy0on6"><span
+                                                    class=" css-1okebmr-indicatorSeparator"></span>
+                                                <div aria-hidden="true" class=" css-sp6uef-indicatorContainer">
+                                                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true"
+                                                         focusable="false"
+                                                         class="css-19bqh2r">
+                                                        <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jss8 jss19">
+                            <div class=" css-2b097c-container">
+                                <div class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"><label
+                                        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+                                        data-shrink="true" >Группа-2</label>
+                                    <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl">
+                                        <div aria-invalid="false" readonly="" type="text"
+                                             class="MuiInputBase-input MuiInput-input jss9 jss20">
+                                            <div class="jss10"><p
+                                                    class="MuiTypography-root jss12 MuiTypography-body1 MuiTypography-colorTextSecondary">
+                                                -</p>
+                                                <div class="css-1tna5xz">
+                                                    <div class="" style="display: inline-block;"><input
+                                                            autocapitalize="none"
+                                                            autocomplete="off"
+                                                            autocorrect="off"
+
+                                                            spellcheck="false"
+                                                            tabindex="0"
+                                                            type="text"
+                                                            aria-autocomplete="list"
+                                                            value=""
+                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
+                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" css-1wy0on6"><span
+                                                    class=" css-1okebmr-indicatorSeparator"></span>
+                                                <div aria-hidden="true" class=" css-sp6uef-indicatorContainer">
+                                                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true"
+                                                         focusable="false"
+                                                         class="css-19bqh2r">
+                                                        <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jss8 jss19">
+                            <div class=" css-2b097c-container">
+                                <div class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"><label
+                                        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+                                        data-shrink="true" >Группа-2</label>
+                                    <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl">
+                                        <div aria-invalid="false" readonly="" type="text"
+                                             class="MuiInputBase-input MuiInput-input jss9 jss20">
+                                            <div class="jss10"><p
+                                                    class="MuiTypography-root jss12 MuiTypography-body1 MuiTypography-colorTextSecondary">
+                                                -</p>
+                                                <div class="css-1tna5xz">
+                                                    <div class="" style="display: inline-block;"><input
+                                                            autocapitalize="none"
+                                                            autocomplete="off"
+                                                            autocorrect="off"
+
+                                                            spellcheck="false"
+                                                            tabindex="0"
+                                                            type="text"
+                                                            aria-autocomplete="list"
+                                                            value=""
+                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
+                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" css-1wy0on6"><span
+                                                    class=" css-1okebmr-indicatorSeparator"></span>
+                                                <div aria-hidden="true" class=" css-sp6uef-indicatorContainer">
+                                                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true"
+                                                         focusable="false"
+                                                         class="css-19bqh2r">
+                                                        <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jss8 jss19">
+                            <div class=" css-2b097c-container">
+                                <div class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"><label
+                                        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+                                        data-shrink="true" >Группа-2</label>
+                                    <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl">
+                                        <div aria-invalid="false" readonly="" type="text"
+                                             class="MuiInputBase-input MuiInput-input jss9 jss20">
+                                            <div class="jss10"><p
+                                                    class="MuiTypography-root jss12 MuiTypography-body1 MuiTypography-colorTextSecondary">
+                                                -</p>
+                                                <div class="css-1tna5xz">
+                                                    <div class="" style="display: inline-block;"><input
+                                                            autocapitalize="none"
+                                                            autocomplete="off"
+                                                            autocorrect="off"
+
+                                                            spellcheck="false"
+                                                            tabindex="0"
+                                                            type="text"
+                                                            aria-autocomplete="list"
+                                                            value=""
+                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
+                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" css-1wy0on6"><span
+                                                    class=" css-1okebmr-indicatorSeparator"></span>
+                                                <div aria-hidden="true" class=" css-sp6uef-indicatorContainer">
+                                                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true"
+                                                         focusable="false"
+                                                         class="css-19bqh2r">
+                                                        <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jss8 jss19">
+                            <div class=" css-2b097c-container">
+                                <div class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"><label
+                                        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+                                        data-shrink="true" >Группа-2</label>
+                                    <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl">
+                                        <div aria-invalid="false" readonly="" type="text"
+                                             class="MuiInputBase-input MuiInput-input jss9 jss20">
+                                            <div class="jss10"><p
+                                                    class="MuiTypography-root jss12 MuiTypography-body1 MuiTypography-colorTextSecondary">
+                                                -</p>
+                                                <div class="css-1tna5xz">
+                                                    <div class="" style="display: inline-block;"><input
+                                                            autocapitalize="none"
+                                                            autocomplete="off"
+                                                            autocorrect="off"
+
+                                                            spellcheck="false"
+                                                            tabindex="0"
+                                                            type="text"
+                                                            aria-autocomplete="list"
+                                                            value=""
+                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
+                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" css-1wy0on6"><span
+                                                    class=" css-1okebmr-indicatorSeparator"></span>
+                                                <div aria-hidden="true" class=" css-sp6uef-indicatorContainer">
+                                                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true"
+                                                         focusable="false"
+                                                         class="css-19bqh2r">
+                                                        <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jss8 jss19">
+                            <div class=" css-2b097c-container">
+                                <div class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"><label
+                                        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+                                        data-shrink="true" >Группа-2</label>
+                                    <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl">
+                                        <div aria-invalid="false" readonly="" type="text"
+                                             class="MuiInputBase-input MuiInput-input jss9 jss20">
+                                            <div class="jss10"><p
+                                                    class="MuiTypography-root jss12 MuiTypography-body1 MuiTypography-colorTextSecondary">
+                                                -</p>
+                                                <div class="css-1tna5xz">
+                                                    <div class="" style="display: inline-block;"><input
+                                                            autocapitalize="none"
+                                                            autocomplete="off"
+                                                            autocorrect="off"
+
+                                                            spellcheck="false"
+                                                            tabindex="0"
+                                                            type="text"
+                                                            aria-autocomplete="list"
+                                                            value=""
+                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
+                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" css-1wy0on6"><span
+                                                    class=" css-1okebmr-indicatorSeparator"></span>
+                                                <div aria-hidden="true" class=" css-sp6uef-indicatorContainer">
+                                                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true"
+                                                         focusable="false"
+                                                         class="css-19bqh2r">
+                                                        <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jss8 jss19">
+                            <div class=" css-2b097c-container">
+                                <div class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"><label
+                                        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+                                        data-shrink="true" >Группа-2</label>
+                                    <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl">
+                                        <div aria-invalid="false" readonly="" type="text"
+                                             class="MuiInputBase-input MuiInput-input jss9 jss20">
+                                            <div class="jss10"><p
+                                                    class="MuiTypography-root jss12 MuiTypography-body1 MuiTypography-colorTextSecondary">
+                                                -</p>
+                                                <div class="css-1tna5xz">
+                                                    <div class="" style="display: inline-block;"><input
+                                                            autocapitalize="none"
+                                                            autocomplete="off"
+                                                            autocorrect="off"
+
+                                                            spellcheck="false"
+                                                            tabindex="0"
+                                                            type="text"
+                                                            aria-autocomplete="list"
+                                                            value=""
+                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
+                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" css-1wy0on6"><span
+                                                    class=" css-1okebmr-indicatorSeparator"></span>
+                                                <div aria-hidden="true" class=" css-sp6uef-indicatorContainer">
+                                                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true"
+                                                         focusable="false"
+                                                         class="css-19bqh2r">
+                                                        <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jss8 jss19">
+                            <div class=" css-2b097c-container">
+                                <div class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"><label
+                                        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+                                        data-shrink="true" >Группа-3</label>
+                                    <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl">
+                                        <div aria-invalid="false" readonly="" type="text"
+                                             class="MuiInputBase-input MuiInput-input jss9 jss20">
+                                            <div class="jss10"><p
+                                                    class="MuiTypography-root jss12 MuiTypography-body1 MuiTypography-colorTextSecondary">
+                                                -</p>
+                                                <div class="css-1tna5xz">
+                                                    <div class="" style="display: inline-block;"><input
+                                                            autocapitalize="none"
+                                                            autocomplete="off"
+                                                            autocorrect="off"
+
+                                                            spellcheck="false"
+                                                            tabindex="0"
+                                                            type="text"
+                                                            aria-autocomplete="list"
+                                                            value=""
+                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
+                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" css-1wy0on6"><span
+                                                    class=" css-1okebmr-indicatorSeparator"></span>
+                                                <div aria-hidden="true" class=" css-sp6uef-indicatorContainer">
+                                                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true"
+                                                         focusable="false"
+                                                         class="css-19bqh2r">
+                                                        <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jss8 jss19">
+                            <div class=" css-2b097c-container">
+                                <div class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"><label
+                                        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+                                        data-shrink="true" >Страны</label>
+                                    <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl">
+                                        <div aria-invalid="false" readonly="" type="text"
+                                             class="MuiInputBase-input MuiInput-input jss9 jss20">
+                                            <div class="jss10"><p
+                                                    class="MuiTypography-root jss12 MuiTypography-body1 MuiTypography-colorTextSecondary">
+                                                -</p>
+                                                <div class="css-1tna5xz">
+                                                    <div class="" style="display: inline-block;"><input
+                                                            autocapitalize="none"
+                                                            autocomplete="off"
+                                                            autocorrect="off"
+
+                                                            spellcheck="false"
+                                                            tabindex="0"
+                                                            type="text"
+                                                            aria-autocomplete="list"
+                                                            value=""
+                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
+                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" css-1wy0on6"><span
+                                                    class=" css-1okebmr-indicatorSeparator"></span>
+                                                <div aria-hidden="true" class=" css-sp6uef-indicatorContainer">
+                                                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true"
+                                                         focusable="false"
+                                                         class="css-19bqh2r">
+                                                        <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jss8 jss19">
+                            <div class=" css-2b097c-container">
+                                <div class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"><label
+                                        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+                                        data-shrink="true" >Операторы</label>
+                                    <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl">
+                                        <div aria-invalid="false" readonly="" type="text"
+                                             class="MuiInputBase-input MuiInput-input jss9 jss20">
+                                            <div class="jss10"><p
+                                                    class="MuiTypography-root jss12 MuiTypography-body1 MuiTypography-colorTextSecondary">
+                                                -</p>
+                                                <div class="css-1tna5xz">
+                                                    <div class="" style="display: inline-block;"><input
+                                                            autocapitalize="none"
+                                                            autocomplete="off"
+                                                            autocorrect="off"
+
+                                                            spellcheck="false"
+                                                            tabindex="0"
+                                                            type="text"
+                                                            aria-autocomplete="list"
+                                                            value=""
+                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
+                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" css-1wy0on6"><span
+                                                    class=" css-1okebmr-indicatorSeparator"></span>
+                                                <div aria-hidden="true" class=" css-sp6uef-indicatorContainer">
+                                                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true"
+                                                         focusable="false"
+                                                         class="css-19bqh2r">
+                                                        <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jss8 jss19">
+                            <div class=" css-2b097c-container">
+                                <div class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"><label
+                                        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+                                        data-shrink="true" >Офферы</label>
+                                    <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl">
+                                        <div aria-invalid="false" readonly="" type="text"
+                                             class="MuiInputBase-input MuiInput-input jss9 jss20">
+                                            <div class="jss10"><p
+                                                    class="MuiTypography-root jss12 MuiTypography-body1 MuiTypography-colorTextSecondary">
+                                                -</p>
+                                                <div class="css-1tna5xz">
+                                                    <div class="" style="display: inline-block;"><input
+                                                            autocapitalize="none"
+                                                            autocomplete="off"
+                                                            autocorrect="off"
+                                                            spellcheck="false"
+                                                            tabindex="0"
+                                                            type="text"
+                                                            aria-autocomplete="list"
+                                                            value=""
+                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
+                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" css-1wy0on6"><span
+                                                    class=" css-1okebmr-indicatorSeparator"></span>
+                                                <div aria-hidden="true" class=" css-sp6uef-indicatorContainer">
+                                                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true"
+                                                         focusable="false"
+                                                         class="css-19bqh2r">
+                                                        <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jss8 jss19">
+                            <div class=" css-2b097c-container">
+                                <div class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"><label
+                                        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+                                        data-shrink="true" >Пресеты фильтров</label>
+                                    <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl">
+                                        <div aria-invalid="false" readonly="" type="text"
+                                             class="MuiInputBase-input MuiInput-input jss9 jss20">
+                                            <div class="jss10"><p
+                                                    class="MuiTypography-root jss12 MuiTypography-body1 MuiTypography-colorTextSecondary">
+                                                -</p>
+                                                <div class="css-1tna5xz">
+                                                    <div class="" style="display: inline-block;"><input
+                                                            autocapitalize="none"
+                                                            autocomplete="off"
+                                                            autocorrect="off"
+
+                                                            spellcheck="false"
+                                                            tabindex="0"
+                                                            type="text"
+                                                            aria-autocomplete="list"
+                                                            value=""
+                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
+                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" css-1wy0on6"><span
+                                                    class=" css-1okebmr-indicatorSeparator"></span>
+                                                <div aria-hidden="true" class=" css-sp6uef-indicatorContainer">
+                                                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true"
+                                                         focusable="false"
+                                                         class="css-19bqh2r">
+                                                        <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="circle-btn-group">
+                            <button class="circle-btn selected" title="Сформировать отчет"><i class="ti ti-check"></i>
+                            </button>
+                            <button class="circle-btn" title="Построить график"><i class="ti ti-stats-up stat-icon"></i>
+                            </button>
+                            <button class="circle-btn" title="Очистить"><i class="ti ti-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filters-mouse-enter" onmouseover="staticFilters();"></div>
+            </div>
+
+        </div>
     </div>
+
+
+    <link rel="stylesheet" href="assets/filters.css">
     <script src="js/jquery-3.6.0.min.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="js/jsDragableTouch.js"></script> -->
     <script src="js/js2.js"></script>
 
 
