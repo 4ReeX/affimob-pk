@@ -30,9 +30,13 @@ function loadContent(viewUrl) {
     $('#layout').load(viewUrl);
     startObserver();
 }
+function openMobileMenu() {
+    $('.mobile-menu').addClass('open');
+    $('.mobile-menu-content').addClass('open');
+}
 function closeMobileMenu() {
-    $('.mobile-menu').toggleClass('open');
-    $('.mobile-menu-content').toggleClass('open');
+    $('.mobile-menu').removeClass('open');
+    $('.mobile-menu-content').removeClass('open');
 }
 $('.button-menu').click(function () {
     $('.icon-menu')
