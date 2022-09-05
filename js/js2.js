@@ -30,6 +30,10 @@ function loadContent(viewUrl) {
     $('#layout').load(viewUrl);
     startObserver();
 }
+function closeMobileMenu() {
+    $('.mobile-menu').toggleClass('open');
+    $('.mobile-menu-content').toggleClass('open');
+}
 $('.button-menu').click(function () {
     $('.icon-menu')
         .toggleClass('arrow-left')
