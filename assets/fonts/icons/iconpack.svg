@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2019 by original authors @ fontello.com</metadata>
+<defs>
+<font id="iconpack" horiz-adv-x="1000" >
+<font-face font-family="iconpack" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="d1" unicode="&#xe800;" d="M468 755a437 437 0 1 0-436-437 437 437 0 0 0 436 437m0 32a468 468 0 1 1 469-469 468 468 0 0 1-469 469z m-145-589v24h265v-24l-4-99h-35v89h-186v-89h-35z m190 269h-78c-9-53-12-86-22-139-16-93-36-125-64-129l-12 23c13 5 26 30 40 112 11 62 17 100 27 166h149v-312h-39z m-199 145a52 52 0 0 0-52 52v119a52 52 0 0 0 103 0v-119a52 52 0 0 0-51-52z m0 206a36 36 0 0 0 35-35v-119a36 36 0 0 0-71 0v119a36 36 0 0 0 36 35m0 32h0a68 68 0 0 1-68-67v-119a68 68 0 0 1 68-68h0a68 68 0 0 1 67 68v119a68 68 0 0 1-67 67z m317-238a52 52 0 0 0-52 52v119a52 52 0 0 0 104 0v-119a52 52 0 0 0-52-52z m0 206a36 36 0 0 0 36-35v-119a36 36 0 0 0-72 0v119a36 36 0 0 0 36 35m0 32h0a68 68 0 0 1-67-67v-119a68 68 0 0 1 67-68h0a68 68 0 0 1 67 68v119a68 68 0 0 1-67 67z" horiz-adv-x="937" />
+</font>
+</defs>
+</svg>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="28325afd-dcf1-4c59-8c8f-6015b7ae12ce" name="Changes" comment="v.1">
+      <change afterPath="$PROJECT_DIR$/.idea/affimob-pk.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/filters.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/icomoon/icomoon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/icomoon/icomoon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/icomoon/icomoon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/icomoon/icomoon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/icomoon/ie7/ie7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/icomoon/ie7/ie7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/icons/iconpack.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/icons/iconpack.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/icons/iconpack.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/icons/iconpack.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/icons/iconpack.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/themify.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/themify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/themify.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/themify.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/user-icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/user-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/user-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/user-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/offers.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/tables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/icomoon/icomoon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/icomoon/icomoon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/icomoon/icomoon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/icomoon/icomoon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/icomoon/ie7/ie7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/icomoon/ie7/ie7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/icons/iconpack.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/icons/iconpack.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/icons/iconpack.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/icons/iconpack.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/icons/iconpack.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/themify.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/themify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/themify.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/themify.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/user-icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/user-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/user-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/user-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/anal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/beeline.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/bell.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/coins.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/dashboard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/exit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/exit2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/exit3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/exit4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/filter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/instruments.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/invert-affimob.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/lamp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/lamp2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/offers.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/potok.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/refs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/settings.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/support.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/tune.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/wallet.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jquery-3.6.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jsDragableTouch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Original" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2CFTTI1p57LeecFqYDp3n1LzEvY" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/marazmen/Desktop/Работа/Affimob/affimob-pk&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/temp" />
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/js" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="28325afd-dcf1-4c59-8c8f-6015b7ae12ce" name="Changes" comment="" />
+      <created>1658397338745</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658397338745</updated>
+      <workItem from="1658397339894" duration="15585000" />
+      <workItem from="1658479087849" duration="4249000" />
+      <workItem from="1659533769198" duration="3247000" />
+      <workItem from="1659605132120" duration="29200000" />
+      <workItem from="1659964979081" duration="22000" />
+      <workItem from="1660221077321" duration="3447000" />
+      <workItem from="1660294187542" duration="8731000" />
+      <workItem from="1660839564714" duration="3610000" />
+      <workItem from="1660890801481" duration="23747000" />
+      <workItem from="1661154367284" duration="616000" />
+      <workItem from="1661169496091" duration="589000" />
+      <workItem from="1661172778401" duration="2772000" />
+      <workItem from="1661184458797" duration="521000" />
+      <workItem from="1661197360995" duration="94000" />
+      <workItem from="1661197467347" duration="7443000" />
+      <workItem from="1661251017504" duration="850000" />
+      <workItem from="1661256452838" duration="2094000" />
+      <workItem from="1661505178021" duration="11306000" />
+      <workItem from="1661856611319" duration="4751000" />
+      <workItem from="1661879519721" duration="2988000" />
+      <workItem from="1662103568086" duration="5738000" />
+      <workItem from="1662121962848" duration="6626000" />
+      <workItem from="1662146778213" duration="365000" />
+      <workItem from="1662147194625" duration="4221000" />
+      <workItem from="1662158515990" duration="3274000" />
+      <workItem from="1662289326551" duration="217000" />
+      <workItem from="1662296216904" duration="2778000" />
+      <workItem from="1662369416656" duration="7489000" />
+      <workItem from="1662627250648" duration="2523000" />
+      <workItem from="1662712801256" duration="1544000" />
+      <workItem from="1663060690202" duration="1914000" />
+      <workItem from="1663152743604" duration="48000" />
+    </task>
+    <task id="LOCAL-00001" summary="new">
+      <created>1660911384767</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660911384767</updated>
+    </task>
+    <task id="LOCAL-00002" summary="new fixes">
+      <created>1662289528928</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662289528928</updated>
+    </task>
+    <task id="LOCAL-00003" summary="new fixes menu mobile">
+      <created>1662371928357</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662371928357</updated>
+    </task>
+    <task id="LOCAL-00004" summary="new fixes menu mobile new">
+      <created>1662375480195</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662375480195</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new" />
+    <MESSAGE value="new fixes" />
+    <MESSAGE value="new fixes menu mobile" />
+    <MESSAGE value="new fixes menu mobile new" />
+    <MESSAGE value="v.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="v.1" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
