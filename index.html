@@ -3,178 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <title>Affimob</title>
-    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/new.css">
+    <link rel="stylesheet" href="assets/filters.css">
+    <link rel="stylesheet" href="assets/tables.css">
     <meta name="viewport" content="width=device-width">
 
 </head>
-<body onload="loadContent('stat.html'); return false;" class="bodyId" id="bodyId">
+<body onload="loadContent('dashboard.html'); return false;" class="bodyId theme-dark" id="bodyId">
 <div class="main-menu open" id="main-menu">
     <div class="button-menu">
         <div class="arrow-left icon-menu"></div>
     </div>
     <div class="title open" onclick="resize();">
-        <img src="img/orange-logo.svg" alt="" class="logo-icon">
-        <img src="img/invert-affimob.svg" alt="" class="logo-text">
+        <img src="images/orange-logo.svg" alt="" class="logo-icon">
+        <img src="images/invert-affimob.svg" alt="" class="logo-text">
     </div>
     <div class="nav-items">
-        <div class="nav-item">
+        <div class="nav-item" onclick="loadContent('dashboard.html'); return false;">
             <div class="nav-icon">
-                <img src="img/dashboard.png" alt="">
+                <img src="images/dashboard.png" alt="">
             </div>
             <div class="nav-text">Дашборд</div>
         </div>
         <div class="nav-item" onclick="loadContent('stat.html'); return false;">
             <div class="nav-icon">
-                <img src="img/anal.png" alt="">
+                <img src="images/anal.png" alt="">
             </div>
             <div class="nav-text">Аналитика</div>
         </div>
         <div class="nav-item" onclick="loadContent('offers.html'); return false;">
             <div class="nav-icon">
-                <img src="img/offers.png" alt="">
+                <img src="images/offers.png" alt="">
             </div>
             <div class="nav-text">Офферы</div>
         </div>
         <div class="nav-item">
             <div class="nav-icon">
-                <img src="img/potok.png" alt="">
+                <img src="images/potok.png" alt="">
             </div>
             <div class="nav-text">Потоки</div>
         </div>
         <div class="nav-item mobile-no">
             <div class="nav-icon">
-                <img src="img/wallet.png" alt="">
+                <img src="images/wallet.png" alt="">
             </div>
             <div class="nav-text">Финансы</div>
         </div>
         <div class="nav-item mobile-no">
             <div class="nav-icon">
-                <img src="img/news.png" alt="">
+                <img src="images/news.png" alt="">
             </div>
             <div class="nav-text">Уведомления</div>
         </div>
         <div class="nav-item mobile-no">
             <div class="nav-icon">
-                <img src="img/rabs.png" alt="">
+                <img src="images/rabs.png" alt="">
             </div>
             <div class="nav-text">Рефералы</div>
         </div>
         <div class="nav-item">
             <div class="nav-icon">
-                <img src="img/instruments.png" alt="">
+                <img src="images/instruments.png" alt="">
             </div>
             <div class="nav-text">Инструменты</div>
+        </div>
+        <div class="nav-item">
+            <div class="nav-icon">
+                <img src="images/faq.png" alt="">
+            </div>
+            <div class="nav-text">FAQ</div>
         </div>
     </div>
 
 </div>
 <div class="content">
     <div class="header">
-        <div class="only-mobile-logo">
-            <img src="img/orange-logo.svg" alt="" class="logo-icon">
-        </div>
+
         <div class="mobile-menu">
             <div class="mobile-menu-content">
                 <div class="mobile-menu-close" onclick="closeMobileMenu();">&#10005;</div>
                 <div class="mobile-menu-stat">
                     <div class="mail">
                         <div class="icona">
-                            <img src="img/user.png" alt="">
+                            <img src="images/user.png" alt="">
                         </div>
                         <span class="amount">affimob@affimob.com | 123456</span>
                     </div>
-                    <div class="balance">
-                        <div class="icona">
-                            <img src="img/wallet.png" alt="">
-                        </div>
-                        <span class="amount"> 23 024 244 руб.</span>
-                    </div>
+<!--                    <div class="balance">-->
+<!--                        <div class="icona">-->
+<!--                            <img src="img/wallet.png" alt="">-->
+<!--                        </div>-->
+<!--                        <span class="amount"> 23 024 244 руб.</span>-->
+<!--                    </div>-->
                 </div>
                 <div class="mobile-menu-nav">
                     <div class="nav-items">
                         <div class="nav-item">
                             <div class="nav-icon">
-                                <img src="img/dashboard.png" alt="">
+                                <img src="images/dashboard.png" alt="">
                             </div>
                             <div class="nav-text">Дашборд</div>
                         </div>
                         <div class="nav-item" onclick="loadContent('stat.html'); return false;">
                             <div class="nav-icon">
-                                <img src="img/anal.png" alt="">
+                                <img src="images/anal.png" alt="">
                             </div>
                             <div class="nav-text">Аналитика</div>
                         </div>
                         <div class="nav-item" onclick="loadContent('offers.html'); return false;">
                             <div class="nav-icon">
-                                <img src="img/offers.png" alt="">
+                                <img src="images/offers.png" alt="">
                             </div>
                             <div class="nav-text">Офферы</div>
                         </div>
                         <div class="nav-item">
                             <div class="nav-icon">
-                                <img src="img/potok.png" alt="">
+                                <img src="images/potok.png" alt="">
                             </div>
                             <div class="nav-text">Потоки</div>
                         </div>
                         <div class="nav-item">
                             <div class="nav-icon">
-                                <img src="img/wallet.png" alt="">
+                                <img src="images/wallet.png" alt="">
                             </div>
                             <div class="nav-text">Финансы</div>
                         </div>
                         <div class="nav-item">
                             <div class="nav-icon">
-                                <img src="img/news.png" alt="">
+                                <img src="images/news.png" alt="">
                             </div>
                             <div class="nav-text">Уведомления</div>
                         </div>
                         <div class="nav-item">
                             <div class="nav-icon">
-                                <img src="img/rabs.png" alt="">
+                                <img src="images/rabs.png" alt="">
                             </div>
                             <div class="nav-text">Рефералы</div>
                         </div>
                         <div class="nav-item">
                             <div class="nav-icon">
-                                <img src="img/instruments.png" alt="">
+                                <img src="images/instruments.png" alt="">
                             </div>
                             <div class="nav-text">Инструменты</div>
                         </div>
                     </div>
                 </div>
                 <div class="nav-footer">
-                    <div class="nav-footer-icon"><img src="img/sun.png" alt=""></div>
-                    <div class="nav-footer-icon"><img src="img/support.png" alt=""></div>
-                    <div class="nav-footer-icon"><img src="img/exit.png" alt=""></div>
+                    <div class="nav-footer-icon"><img src="images/notification.png" alt="" class="notification-icon"><div class="notyDot"></div></div>
+                    <div class="nav-footer-icon moon" onclick="changeTheme()"><img src="images/sun.png" alt="" class="sunIcon" id="themeChange"></div>
+                    <div class="nav-footer-icon"><img src="images/support.png" alt=""></div>
+                    <div class="nav-footer-icon"><img src="images/exit.png" alt=""></div>
                 </div>
             </div>
 
         </div>
 
         <div class="info">
+            <div class="only-mobile-logo">
+                <img src="images/orange-logo.svg" alt="" class="logo-icon">
+            </div>
             <div class="balance">
                 <div class="icona">
-                    <img src="img/wallet.png" alt="">
+                    <img src="images/wallet.png" alt="">
                 </div>
                 <span class="amount"> 23 024 244 руб.</span>
             </div>
             <div class="mail">
                 <div class="icona">
-                    <img src="img/user.png" alt="">
+                    <img src="images/user.png" alt="">
                 </div>
                 <span class="amount">affimob@affimob.com | 123456</span>
             </div>
         </div>
         <div class="nav-footer">
-            <div class="nav-footer-icon"><img src="img/sun.png" alt=""></div>
-            <div class="nav-footer-icon"><img src="img/support.png" alt=""></div>
-            <div class="nav-footer-icon"><img src="img/exit.png" alt=""></div>
+            <div class="nav-footer-icon"><img src="images/notification.png" alt="" class="notification-icon" id="notificationIcon"><div class="notyDot"></div></div>
+            <div class="notification-block hide" id="notificatios">
+                <div class="notification-header">
+                    <div class="notification-title">
+                        Уведомления
+                    </div>
+                    <div class="notification-subtitle">
+                        У вас 21 новое событие
+                    </div>
+                </div>
+                <div class="notification-body">
+                    <div class="notification-tabs">
+                        <div class="notification-btn active" id="events" onclick="toggleEvents(this)">События</div>
+                        <div class="notification-btn" id="messages" onclick="toggleMessages(this)">Сообщения</div>
+                    </div>
+                    <div class="notification-line"></div>
+                    <div class="block notification-events">
+                        <div class="notification-item active">
+                            <div class="notification-item-icon"><img src="images/notification-alert.png" alt=""></div>
+                            <div class="notification-item-title">Технические работы Билайн</div>
+                            <div class="notification-item-date">24.01.2023 19:31</div>
+                        </div>
+                        <div class="notification-item">
+                            <div class="notification-item-icon"><img src="images/notification-alert.png" alt=""></div>
+                            <div class="notification-item-title">Технические работы Билайн</div>
+                            <div class="notification-item-date">24.01.2023 19:31</div>
+                        </div>
+                        <div class="notification-item">
+                            <div class="notification-item-icon"><img src="images/notification-alert.png" alt=""></div>
+                            <div class="notification-item-title">Какой то текст </div>
+                            <div class="notification-item-date">24.01.2023 19:31</div>
+                        </div>
+                        <div class="notification-item active">
+                            <div class="notification-item-icon"><img src="images/notification-alert.png" alt=""></div>
+                            <div class="notification-item-title">Обьявление которое не помещается целиком в этот блок</div>
+                            <div class="notification-item-date">24.01.2023 19:31</div>
+                        </div>
+                        <div class="notification-item">
+                            <div class="notification-item-icon"><img src="images/notification-alert.png" alt=""></div>
+                            <div class="notification-item-title">Технические работы Билайн</div>
+                            <div class="notification-item-date">24.01.2023 19:31</div>
+                        </div>
+                        <div class="notification-item active">
+                            <div class="notification-item-icon"><img src="images/notification-alert.png" alt=""></div>
+                            <div class="notification-item-title">Технические работы Билайн</div>
+                            <div class="notification-item-date">24.01.2023 19:31</div>
+                        </div>
+                        <div class="notification-item">
+                            <div class="notification-item-icon"><img src="images/notification-alert.png" alt=""></div>
+                            <div class="notification-item-title">Технические работы Билайн</div>
+                            <div class="notification-item-date">24.01.2023 19:31</div>
+                        </div>
+                    </div>
+                    <div class="block notification-messages hide">
+                        <div class="notification-item active">
+                            <div class="notification-item-icon"><img src="images/message.png" alt=""></div>
+                            <div class="notification-item-title">Аффимоб поздравляет вас с Новым годом! </div>
+                            <div class="notification-item-date">31.12.2023 00:00</div>
+                        </div>
+                        <div class="notification-item">
+                            <div class="notification-item-icon"><img src="images/message.png" alt=""></div>
+                            <div class="notification-item-title">Аффимоб поздравляет вас с Новым годом! </div>
+                            <div class="notification-item-date">31.12.2023 00:00</div>
+                        </div>
+                        <div class="notification-item">
+                            <div class="notification-item-icon"><img src="images/message.png" alt=""></div>
+                            <div class="notification-item-title">Аффимоб поздравляет вас с Новым годом! </div>
+                            <div class="notification-item-date">31.12.2023 00:00</div>
+                        </div>
+                        <div class="notification-item">
+                            <div class="notification-item-icon"><img src="images/message.png" alt=""></div>
+                            <div class="notification-item-title">Аффимоб поздравляет вас с Новым годом! </div>
+                            <div class="notification-item-date">31.12.2023 00:00</div>
+                        </div>
+                    </div>
+                    <div class="notification-line"></div>
+                    <a href="#" class="notification-more">Показать больше новостей</a>
+
+                </div>
+            </div>
+            <div class="nav-footer-icon moon" onclick="changeTheme()"><img src="images/moon.png" alt="" class="sunIcon" id="themeChange2"></div>
+            <div class="nav-footer-icon"><img src="images/support.png" alt=""></div>
+            <div class="nav-footer-icon"><img src="images/exit.png" alt=""></div>
         </div>
-        <div class="mobile-menu-icon" onclick="openMobileMenu();">
-            <img src="img/menu-hamb.png" alt="">
+        <div class="mobile-menu-icon">
+            <img src="images/menu.png" alt="" onclick="openMobileMenu();">
         </div>
     </div>
-    <div class="wrapper">
+    <div class="wrapper layout" id="layout">
         <div class="card">
             <div class="card-header open-menu">
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -189,9 +279,9 @@
                 <div class="block-filters">
                     <div class="search open">
                         <div class="icon-search">
-                            <img src="img/search.svg" alt="" class="src">
+                            <img src="images/search.svg" alt="" class="src">
                         </div>
-                        <input type="search" placeholder="Искать..." class="top-search">
+                        <input type="text" placeholder="Искать..." class="top-search" id="mysearch" oninput="hideIconSearch()" onfocusin="hideIconSearch()" onfocusout="addIconSearch()">
                         <div class="results">
                             <div class="txt">
                                 Совпадений:
@@ -201,13 +291,13 @@
                     </div>
                     <div class="filter-buttons">
                         <div class="xls-btn">
-                            <img src="img/xls.png" alt="">
+                            <img src="images/xls.png" alt="">
                         </div>
                         <div class="setup-btn">
-                            <img src="img/setup.png" alt="">
+                            <img src="images/setup.png" alt="">
                         </div>
                         <div class="filters-btn" onclick="toggleFilters();" id="filtBtn">
-                            <img src="img/filter.png" alt="" id="fbtn">
+                            <img src="images/filter.png" alt="" id="fbtn">
                         </div>
                     </div>
                 </div>
@@ -215,7 +305,6 @@
 
             </div>
             <div class="card-body">
-                <div class="layout" id="layout"></div>
                 <div class="filters" onmouseenter="staticFilters();" id="filters">
                     <div class="nav-filter">
                         <div class="jss8 jss19">
@@ -232,13 +321,13 @@
                                                 <div class="css-1tna5xz">
                                                     <div class="" style="display: inline-block;">
                                                         <input autocapitalize="none"
-                                                               autocomplete="off" autocorrect="off"
+                                                               autocomplete="off"
 
                                                                spellcheck="false" tabindex="0"
                                                                type="text" aria-autocomplete="list"
                                                                value=""
-                                                               style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
-                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                               style="box-sizing: content-box; width: 2px; background: 0 center; border: 0; font-size: inherit; opacity: 1; outline: 0; padding: 0; color: inherit;">
+                                                        <div style="position: absolute; top: 0; left: 0; visibility: hidden; height: 0; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -291,15 +380,14 @@
                                                     <div class="" style="display: inline-block;"><input
                                                             autocapitalize="none"
                                                             autocomplete="off"
-                                                            autocorrect="off"
                                                             id="react-select-2-input"
                                                             spellcheck="false"
                                                             tabindex="0"
                                                             type="text"
                                                             aria-autocomplete="list"
                                                             value=""
-                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
-                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                            style="box-sizing: content-box; width: 2px; background: 0 center; border: 0; font-size: inherit; opacity: 1; outline: 0; padding: 0; color: inherit;">
+                                                        <div style="position: absolute; top: 0; left: 0; visibility: hidden; height: 0; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -347,8 +435,8 @@
                                                             type="text"
                                                             aria-autocomplete="list"
                                                             value=""
-                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
-                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                            style="box-sizing: content-box; width: 2px; background: 0 center; border: 0; font-size: inherit; opacity: 1; outline: 0; padding: 0; color: inherit;">
+                                                        <div style="position: absolute; top: 0; left: 0; visibility: hidden; height: 0; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -389,8 +477,8 @@
                                                             type="text"
                                                             aria-autocomplete="list"
                                                             value=""
-                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
-                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                            style="box-sizing: content-box; width: 2px; background: 0 center; border: 0; font-size: inherit; opacity: 1; outline: 0; padding: 0; color: inherit;">
+                                                        <div style="position: absolute; top: 0; left: 0; visibility: hidden; height: 0; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -431,8 +519,8 @@
                                                             type="text"
                                                             aria-autocomplete="list"
                                                             value=""
-                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
-                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                            style="box-sizing: content-box; width: 2px; background: 0 center; border: 0; font-size: inherit; opacity: 1; outline: 0; padding: 0; color: inherit;">
+                                                        <div style="position: absolute; top: 0; left: 0; visibility: hidden; height: 0; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -473,8 +561,8 @@
                                                             type="text"
                                                             aria-autocomplete="list"
                                                             value=""
-                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
-                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                            style="box-sizing: content-box; width: 2px; background: 0 center; border: 0; font-size: inherit; opacity: 1; outline: 0; padding: 0; color: inherit;">
+                                                        <div style="position: absolute; top: 0; left: 0; visibility: hidden; height: 0; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -515,8 +603,8 @@
                                                             type="text"
                                                             aria-autocomplete="list"
                                                             value=""
-                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
-                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                            style="box-sizing: content-box; width: 2px; background: 0 center; border: 0; font-size: inherit; opacity: 1; outline: 0; padding: 0; color: inherit;">
+                                                        <div style="position: absolute; top: 0; left: 0; visibility: hidden; height: 0; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -557,8 +645,8 @@
                                                             type="text"
                                                             aria-autocomplete="list"
                                                             value=""
-                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
-                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                            style="box-sizing: content-box; width: 2px; background: 0 center; border: 0; font-size: inherit; opacity: 1; outline: 0; padding: 0; color: inherit;">
+                                                        <div style="position: absolute; top: 0; left: 0; visibility: hidden; height: 0; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -599,8 +687,8 @@
                                                             type="text"
                                                             aria-autocomplete="list"
                                                             value=""
-                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
-                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                            style="box-sizing: content-box; width: 2px; background: 0 center; border: 0; font-size: inherit; opacity: 1; outline: 0; padding: 0; color: inherit;">
+                                                        <div style="position: absolute; top: 0; left: 0; visibility: hidden; height: 0; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -641,8 +729,8 @@
                                                             type="text"
                                                             aria-autocomplete="list"
                                                             value=""
-                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
-                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                            style="box-sizing: content-box; width: 2px; background: 0 center; border: 0; font-size: inherit; opacity: 1; outline: 0; padding: 0; color: inherit;">
+                                                        <div style="position: absolute; top: 0; left: 0; visibility: hidden; height: 0; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -683,8 +771,8 @@
                                                             type="text"
                                                             aria-autocomplete="list"
                                                             value=""
-                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
-                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                            style="box-sizing: content-box; width: 2px; background: 0 center; border: 0; font-size: inherit; opacity: 1; outline: 0; padding: 0; color: inherit;">
+                                                        <div style="position: absolute; top: 0; left: 0; visibility: hidden; height: 0; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -725,8 +813,8 @@
                                                             type="text"
                                                             aria-autocomplete="list"
                                                             value=""
-                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
-                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                            style="box-sizing: content-box; width: 2px; background: 0 center; border: 0; font-size: inherit; opacity: 1; outline: 0; padding: 0; color: inherit;">
+                                                        <div style="position: absolute; top: 0; left: 0; visibility: hidden; height: 0; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -766,8 +854,8 @@
                                                             type="text"
                                                             aria-autocomplete="list"
                                                             value=""
-                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
-                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                            style="box-sizing: content-box; width: 2px; background: 0 center; border: 0; font-size: inherit; opacity: 1; outline: 0; padding: 0; color: inherit;">
+                                                        <div style="position: absolute; top: 0; left: 0; visibility: hidden; height: 0; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -808,8 +896,8 @@
                                                             type="text"
                                                             aria-autocomplete="list"
                                                             value=""
-                                                            style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
-                                                        <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                            style="box-sizing: content-box; width: 2px; background: 0 center; border: 0; font-size: inherit; opacity: 1; outline: 0; padding: 0; color: inherit;">
+                                                        <div style="position: absolute; top: 0; left: 0; visibility: hidden; height: 0; overflow: scroll; white-space: pre; font-size: 14px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -839,7 +927,6 @@
                 </div>
                 <div class="filters-mouse-enter" onmouseover="staticFilters();"></div>
             </div>
-
         </div>
     </div>
 
@@ -850,5 +937,64 @@
 
 
 </div>
+<script>
+    function changeTheme() {
+        const element = document.getElementById("bodyId");
+        element.classList.toggle("theme-dark");
+    }
+    const buttonTheme = document.getElementById("themeChange");
+    buttonTheme.addEventListener("click", iconChange);
+    function iconChange() {
+        console.log(buttonTheme.getAttribute("src"));
+        if (buttonTheme.getAttribute("src") == "images/moon.png") {
+            buttonTheme.setAttribute("src", "images/sun.png");
+        }
+       else {
+            buttonTheme.setAttribute("src", "images/moon.png");
+        }
+
+    }
+    const buttonTheme2 = document.getElementById("themeChange2");
+    buttonTheme2.addEventListener("click", iconChange2);
+    function iconChange2() {
+        console.log(buttonTheme2.getAttribute("src"));
+        if (buttonTheme2.getAttribute("src") == "images/sun.png") {
+            buttonTheme2.setAttribute("src", "images/moon.png");
+        }
+        else {
+            buttonTheme2.setAttribute("src", "images/sun.png");
+        }
+
+    }
+
+    function copyCode(el) {
+        el.innerHTML = "Код скопирован";
+    }
+    const buttonNotifications = document.getElementById('notificationIcon');
+
+    buttonNotifications.addEventListener("click", notifications);
+    function notifications() {
+        console.log('clicer');
+        document.getElementById('notificatios').classList.toggle('hide');
+    }
+    function toggleMessages() {
+        document.querySelector('.notification-events').classList.add('hide');
+        document.querySelector('.notification-messages').classList.remove('hide');
+        document.getElementById('events').classList.remove('active');
+        document.getElementById('messages').classList.add('active');
+
+    }
+    function toggleEvents() {
+        document.querySelector('.notification-events').classList.remove('hide');
+        document.querySelector('.notification-messages').classList.add('hide');
+        document.getElementById('messages').classList.remove('active');
+        document.getElementById('events').classList.add('active');
+    }
+    function hideOffers() {
+        document.getElementById('offers-list').classList.toggle('hide');
+    }
+
+</script>
+<script src="js/dom.js"></script>
 </body>
 </html>

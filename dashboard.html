@@ -1,0 +1,521 @@
+<div class="row w-100 nowrap scroll-content">
+        <div class="chart-block plate">
+            <div class="chart-screen">
+                <img src="images/dark-line.png" alt="" class="chart-img">
+            </div>
+            <div class="row grid6">
+                    <div class="progress-box progress-2 fade-5">
+                        <h4 class="por-title" style="border-bottom: 2px solid rgb(181, 57, 48);">
+                            <i id="PopoverDynamicIcon-Клики" class="ti ti-layout-line-solid"
+                               style="display: inline-block;">&nbsp;0.0%</i>&nbsp;Клики
+                        </h4>
+                        <div class="por-txt">0</div>
+                    </div>
+                    <div class="progress-box progress-2 fade-5"><h4 class="por-title"
+                                                                    style="border-bottom: 2px solid rgb(243, 148, 34);">
+                        <i id="PopoverDynamicIcon-Trafficback" class="ti ti-layout-line-solid"
+                           style="display: inline-block;">&nbsp;0.0%</i>&nbsp;Trafficback</h4>
+                        <div class="por-txt">0</div>
+                    </div>
+
+                    <div class="progress-box progress-2"><h4 class="por-title"
+                                                             style="border-bottom: 2px solid rgb(85, 174, 149);"><i
+                            id="PopoverDynamicIcon-Подписки" class="ti ti-layout-line-solid"
+                            style="display: inline-block;">&nbsp;0.0%</i>&nbsp;Подписки</h4>
+                        <div class="por-txt">0</div>
+                    </div>
+                    <div class="progress-box progress-2"><h4 class="por-title"
+                                                             style="border-bottom: 2px solid rgb(253, 119, 146);"><i
+                            id="PopoverDynamicIcon-CR" class="ti ti-layout-line-solid" style="display: inline-block;">&nbsp;0.0%</i>&nbsp;CR
+                    </h4>
+                        <div class="por-txt">0%</div>
+                    </div>
+
+                    <div class="progress-box progress-2 fade-5"><h4 class="por-title"
+                                                                    style="border-bottom: 2px solid rgb(83, 126, 197);">
+                        <i id="PopoverDynamicIcon-Ребиллы" class="ti ti-layout-line-solid"
+                           style="display: inline-block;">&nbsp;0.0%</i>&nbsp;Ребиллы</h4>
+                        <div class="por-txt">0</div>
+                    </div>
+                    <div class="progress-box progress-2"><h4 class="por-title"
+                                                             style="border-bottom: 2px solid rgb(116, 92, 151);"><i
+                            id="PopoverDynamicIcon-Доход" class="ti ti-layout-line-solid"
+                            style="display: inline-block;">&nbsp;0.0%</i>&nbsp;Доход</h4>
+                        <div class="por-txt">0p.</div>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="chart-ui">
+                    <div class="date-block">
+                        <input type="date" class="date">
+                    </div>
+                    <div class="datelist">
+                        <button class="icon-btn" title="Сегодня"><i class="date-icon icon-day"></i></button>
+                        <button class="icon-btn" title="2 дня"><i class="date-icon icon-2"></i></button>
+                        <button class="icon-btn selected" title="7 дней"><i class="date-icon icon-7"></i></button>
+                        <button class="icon-btn" title="30 дней"><i class="date-icon icon-30"></i></button>
+                    </div>
+                    <div class="operator-list">
+                        <button class="icon-btn operator" title="Билайн"><img src="images/operators/beeline.png" alt=""></button>
+                        <button class="icon-btn operator" title="МТС"><img src="images/operators/mts.png" alt=""></button>
+                        <button class="icon-btn operator" title="Мегафон"><img src="images/operators/megafon.png" alt=""></button>
+                        <button class="icon-btn operator" title="Теле2"><img src="images/operators/tele2.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="dynamica-all" id="dynamica" onclick="hideOffers();">
+                    <span>
+                         <span class="white-color">Динамика офферов</span>
+                            <span class="gray">вчера/сегодня</span>
+                    </span>
+                    <div class="dyn-block">
+                        <div class="today-absolute green">+12</div>
+                        <span>|</span>
+                        <div class="today-percent green">2400%</div>
+                    </div>
+
+                </div>
+                <div class="offers-list" id="offers-list">
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+12</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1asdkasald alsdkj
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+1222</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+12</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item active">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+12</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1afdasf
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute red">-1222</div>
+                            <span>|</span>
+                            <div class="today-percent red">20%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+12</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+12</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+12</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+12</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1asdkasald alsdkj
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+1222</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+12</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item active">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+12</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1afdasf
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute red">-1222</div>
+                            <span>|</span>
+                            <div class="today-percent red">20%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+12</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+12</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+12</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+12</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1asdkasald alsdkj
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+1222</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+12</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item active">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+12</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1afdasf
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute red">-1222</div>
+                            <span>|</span>
+                            <div class="today-percent red">20%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+12</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+12</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+12</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+12</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1asdkasald alsdkj
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+1222</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+12</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item active">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+12</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1afdasf
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute red">-1222</div>
+                            <span>|</span>
+                            <div class="today-percent red">20%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+12</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+12</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-item-text">
+                            12652 | Remember 1 - BY-A1
+                        </div>
+                        <div class="dyn-block">
+                            <div class="today-absolute green">+12</div>
+                            <span>|</span>
+                            <div class="today-percent green">2400%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="advert plate">
+            <div class="ad-list">
+                <div class="ad-item">
+                    <div class="col">
+                        <div class="type">
+                            Рекламная сеть
+                        </div>
+                        <div class="ad-logo">
+                            <img src="images/partners/keitaro.png" alt="">
+                        </div>
+                        <div class="ad-bonus">
+                            50% бонус на первый депозит
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="codecopy" onclick="copyCode(this)">
+                            код: <span>AffimobClickstar</span>
+                        </div>
+                        <a href="#" class="go">
+                            <span>перейти</span>
+                            <span><img src="images/icons/go.png" alt=""></span>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="ad-item">
+                    <div class="col">
+                        <div class="type">
+                            Трекинг
+                        </div>
+                        <div class="ad-logo">
+                            <img src="images/partners/adsbridge.png" alt="">
+                        </div>
+                        <div class="ad-bonus">
+                            50% бонус на первый депозит
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="codecopy" onclick="copyCode(this)">
+                            код: <span>AffimobClickstar</span>
+                        </div>
+                        <a href="#" class="go">
+                            <span>перейти</span>
+                            <span><img src="images/icons/go.png" alt=""></span>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="ad-item">
+                    <div class="col">
+                        <div class="type">
+                            Рекламная сеть
+                        </div>
+                        <div class="ad-logo">
+                            <img src="images/partners/peerclick.png" alt="">
+                        </div>
+                        <div class="ad-bonus">
+                            50% бонус на первый депозит
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="codecopy" onclick="copyCode(this)">
+                            код: <span>AffimobClickstar</span>
+                        </div>
+                        <a href="#" class="go">
+                            <span>перейти</span>
+                            <span><img src="images/icons/go.png" alt=""></span>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="ad-item">
+                    <div class="col">
+                        <div class="type">
+                            Трекинг
+                        </div>
+                        <div class="ad-logo">
+                            <img src="images/partners/bemob.png" alt="">
+                        </div>
+                        <div class="ad-bonus">
+                            50% бонус на первый депозит
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="codecopy" onclick="copyCode(this)">
+                            код: <span>AffimobClickstar</span>
+                        </div>
+                        <a href="#" class="go">
+                            <span>перейти</span>
+                            <span><img src="images/icons/go.png" alt=""></span>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="ad-item">
+                    <div class="col">
+                        <div class="type">
+                            Трекинг
+                        </div>
+                        <div class="ad-logo">
+                            <img src="images/partners/binom.png" alt="">
+                        </div>
+                        <div class="ad-bonus">
+                            50% бонус на первый депозит
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="codecopy" onclick="copyCode(this)">
+                            код: <span>AffimobClickstar</span>
+                        </div>
+                        <a href="#" class="go">
+                            <span>перейти</span>
+                            <span><img src="images/icons/go.png" alt=""></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
