@@ -974,7 +974,7 @@
 
     buttonNotifications.addEventListener("click", notifications);
     function notifications() {
-        console.log('clicer');
+        console.log('clicker');
         document.getElementById('notificatios').classList.toggle('hide');
     }
     function toggleMessages() {
@@ -994,7 +994,14 @@
         document.getElementById('offers-list').classList.toggle('hide');
     }
 
+    const changeRow = $('#changeRow');
+    const offersWidth = $('#offers-list');
+    $(window).resize(function() {
+        console.log(offersWidth.width);
+        if (offersWidth.width < 1024) {
+            changeRow.classList.add('column');
+        }
+    });
 </script>
-<script src="js/dom.js"></script>
 </body>
 </html>
