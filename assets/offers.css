@@ -104,6 +104,12 @@ label{color:rgba(0,0,0,.54);padding:0;font-size:1rem;font-family:"Roboto","Helve
 @media screen and (max-width:320px){
     #offers-list{justify-content:center;}
 }
+@media screen and (max-width: 425px) {
+    .offer-block {
+        width: auto;
+        flex-basis: calc(50% - 3px);
+    }
+}
 .layout .card {
     max-width: 100%;
 }
