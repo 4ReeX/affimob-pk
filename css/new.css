@@ -10663,11 +10663,11 @@ a {
     width: 30px;
     height: 30px;
     position: fixed;
-    bottom: 10px;
     left: 50%;
     transform: translate(-50%);
     z-index: 999;
     transition: all 0.5s ease;
+    bottom: 90px;
 }
 
 .scroll-icon .show {
@@ -11680,7 +11680,7 @@ table i {
     position: relative;
 }
 .nav-footer-icon img.notification-icon{
-   filter: invert(0);
+    filter: invert(0);
 }
 
 
@@ -15068,7 +15068,7 @@ a {
 }
 
 .content-block {
-    height: calc(100% - 40vh);
+    height: calc(100% - 40vh)!important;
     color: #ffffff;
 }
 
@@ -17165,11 +17165,12 @@ body.theme-dark span.dyn-title {
         font-size: 16px;
         font-weight: 700;
         position: absolute;
-        top: 25px;
+        top: 0px;
         left: -53px;
         background-size: 20px;
         background: #00a9de url(../images/main/icon-graph.png) no-repeat right center;
         background-position-x: 128px;
+        background-size: 20px;
         border-radius: 10px;
         color: #fff;
         padding-right: 36px;
@@ -17179,11 +17180,12 @@ body.theme-dark span.dyn-title {
         font-size: 16px;
         font-weight: 700;
         position: absolute;
-        top: 9px;
+        top: -15px;
         left: 8px;
         background-size: 25px;
         background: #00d500 url(../images/main/icon-resell.png) no-repeat right center;
         background-position-x: 92px;
+        background-size: 20px;
         border-radius: 10px;
         color: #fff;
         padding-right: 36px;
@@ -17193,11 +17195,12 @@ body.theme-dark span.dyn-title {
         font-size: 16px;
         font-weight: 700;
         position: absolute;
-        top: 33px;
+        top: 9px;
         left: 27px;
         background-size: 23px;
         background: #0067a8 url(../images/main/icon-stat.png) no-repeat right center;
         background-position-x: 142px;
+        background-size: 20px;
         border-radius: 10px;
         color: #fff;
         padding-right: 36px;
@@ -17207,11 +17210,12 @@ body.theme-dark span.dyn-title {
         font-size: 16px;
         font-weight: 700;
         position: absolute;
-        top: 34px;
+        top: 10px;
         left: 70px;
         background-size: 23px;
         background: #526a79 url(../images/main/icon-money.png) no-repeat right center;
         background-position-x: 146px;
+        background-size: 20px;
         border-radius: 10px;
         color: #fff;
         padding-right: 36px;
@@ -17259,7 +17263,7 @@ body.theme-dark span.dyn-title {
         justify-content: flex-start;
         align-items: flex-start;
     }
-    .o-nas:after {
+    /* .o-nas:after {
         content: "О нас пишут";
         display: block;
         font-size: 12px;
@@ -17275,7 +17279,7 @@ body.theme-dark span.dyn-title {
         margin-top: -56px;
         text-align: right;
         right: 17px;
-    }
+    } */
     .jss8 {
         min-width: 100%;
     }
@@ -17433,8 +17437,10 @@ body.theme-dark span.dyn-title {
         overflow-y: auto;
     }
     .af:before, .fi:before, .mm:before, .ob:before {
-        display: block;
-        padding: 5px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
     }
     .social {
         z-index: 9;
@@ -17455,7 +17461,7 @@ body.theme-dark span.dyn-title {
     }
     .text-block {
         font-weight: 400;
-        font-size: 2.5vh;
+        font-size: 4vw;
     }
     .MordaMenu {
         position: fixed;
@@ -17476,7 +17482,8 @@ body.theme-dark span.dyn-title {
         font-size: 35px;
         min-width: 30px;
         text-align: left;
-        transition: all .9s ease-in-out;
+        transition: all ease-in-out;
+        filter: brightness(2.5);
     }
     .white-line {
         height: 100%;
@@ -17492,15 +17499,16 @@ body.theme-dark span.dyn-title {
         background-position-x: 95%;
         background-position-y: 10px;
     }
-    .img-block {
-        padding-top: 0;
+
+    .content-block .img-block {
+        padding-top: 113px;
         height: 150px;
     }
     .morda .logo {
         position: fixed;
         top: 25px;
         width: 166px;
-        left: auto;
+        /* left: auto; */
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -17819,7 +17827,7 @@ body.theme-dark span.dyn-title {
     .with-labels {
         top: 18%;
     }
-    .o-nas:after {
+    /* .o-nas:after {
         content: "О НАС ПИШУТ";
         display: block;
         font-size: 14px;
@@ -17835,7 +17843,7 @@ body.theme-dark span.dyn-title {
         position: absolute;
         width: 124px;
         margin-top: -60px;
-    }
+    } */
     .social {top: 15%;}
     body.morda {
         overflow-y: scroll;
@@ -17873,7 +17881,7 @@ body.theme-dark span.dyn-title {
     .with-labels {
         top: 18%;
     }
-    .o-nas:after {
+    /* .o-nas:after {
         content: "О НАС ПИШУТ";
         display: block;
         font-size: 14px;
@@ -17886,7 +17894,7 @@ body.theme-dark span.dyn-title {
         position: absolute;
         width: 124px;
         margin-top: -60px;
-    }
+    } */
     .social {
         top: 15%;
     }
