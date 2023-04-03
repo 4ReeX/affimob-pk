@@ -3,7 +3,7 @@ $(".button-menu").click(function () {
     $(".main-menu").delay(900).toggleClass('open');
     // уменьшение layout на ширину левого меню:(в css)
     // сокрытие текста пунктов меню
-    $(".nav-text").delay(100).toggleClass('close');
+    $(".nav-text").delay(100).toggleClass('close-icon');
     // сдвиг поиска
     $(".search").delay(100).toggleClass('open');
     // сокрытие текстовой части лого

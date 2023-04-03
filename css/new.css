@@ -9440,12 +9440,12 @@ label.form-control-label {
 }
 
 .openparams {
-    display: inline-table; /*!*/
+    display: inline-table;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
     width: auto;
-    margin: 15px auto;
+    margin: 0 0 15px;
     color: #000;
     border-bottom: 1px dashed #000;
     font-size: 16px;
@@ -9455,7 +9455,6 @@ label.form-control-label {
     text-align: left;
     box-sizing: border-box;
     padding: 0;
-
 }
 
 .par {
@@ -12019,7 +12018,7 @@ body {
 }
 
 
-.nav-text.close {
+.nav-text.close-icon {
     opacity: 0;
     animation: none;
     display: none;
@@ -16019,6 +16018,9 @@ body.theme-dark .dyn-block {
 }
 .collapse.show {
     width: 100%;
+    position: relative;
+    background: #272727;
+    z-index: 9;
 }
 .collapse:not(.show) {
     display: none;
@@ -16058,6 +16060,12 @@ hr {
     width: 100%;
     opacity: 0.6;
 }
+.only-mob {
+    display: none;
+}
+.only-desktop {
+    display: block;
+}
 .single-offer-preview {
     width: 100%;
     max-width: 200px;
@@ -16070,8 +16078,30 @@ hr {
     flex-direction: row;
     justify-content: space-between;
 }
+.block {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 10px 0;
+}
+label.input-label {
+    color: rgba(0, 0, 0, 0.54);
+    padding: 0;
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.00938em;
+}
 .single-offer-preview img {
     width: 100%;
+}
+.offer-page .MuiFormControl-fullWidth {
+    max-width: initial;
+}
+.collapse hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 form-control {
     font-size: 12px;
@@ -17013,8 +17043,19 @@ body.theme-dark span.dyn-title {
     }
 }
 @media screen and (max-width: 767px) {
+    .only-mob {
+        display: block;
+    }
+    .only-desktop {
+        display: none;
+    }
     .top-right .navbar-inverse .divider {
         top: 0;
+    }
+    .block {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
     }
 }
 @media screen and (max-width: 575px) {
@@ -17088,6 +17129,18 @@ body.theme-dark span.dyn-title {
         width: 100%;
         max-width: 100px;
     }
+    label.input-label {
+        color: rgba(0, 0, 0, 0.54);
+        padding: 0;
+        font-size: 1rem;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: 0.00938em;
+    }
+    .offer-page .MuiFormControl-fullWidth {
+        max-width: 100%!important;
+    }
     .more {
         width: auto;
         font-size: 14px;
@@ -17116,6 +17169,7 @@ body.theme-dark span.dyn-title {
         justify-content: space-between;
         align-items: center;
         padding-bottom: 12px;
+        margin-top: 4px;
     }
     ::-webkit-scrollbar {
         width: 0;
@@ -17834,6 +17888,7 @@ body.theme-dark span.dyn-title {
         flex-direction: column;
         display: flex;
         gap: 10px;
+        position: relative;
     }
     .no-mob {
         display: block;
