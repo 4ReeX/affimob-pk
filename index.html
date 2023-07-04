@@ -149,7 +149,9 @@
                     </div>
                 </div>
                 <div class="nav-footer">
-                    <div class="nav-footer-icon"><img src="images/notification.png" alt="" class="notification-icon"><div class="notyDot"></div></div>
+                    <div class="nav-footer-icon" id="notificationIconMobile">
+                        <img src="images/notification.png" alt="" class="notification-icon">
+                        <div class="notyDot"></div></div>
                     <div class="nav-footer-icon moon" onclick="changeTheme()"><img src="images/sun.png" alt="" class="sunIcon" id="themeChange"></div>
                     <div class="nav-footer-icon"><img src="images/support.png" alt=""></div>
                     <div class="nav-footer-icon"><img src="images/exit.png" alt=""></div>
@@ -157,7 +159,59 @@
             </div>
 
         </div>
+        <div class="notification-block mobile hide" id="mobileNotifications">
+            <div class="notification-header">
+                <div class="notification-title">
+                    Уведомления
+                </div>
+                <div class="notification-subtitle">
+                    У вас 21 новое событие
+                </div>
+            </div>
+            <div class="notification-body">
+                <div class="notification-line"></div>
+                <div class="block notification-events">
+                    <div class="notification-item active">
+                        <div class="notification-item-icon"><img src="images/notification-alert.png" alt=""></div>
+                        <div class="notification-item-title">Технические работы Билайн</div>
+                        <div class="notification-item-date">24.01.2023 19:31</div>
+                    </div>
+                    <div class="notification-item">
+                        <div class="notification-item-icon"><img src="images/notification-alert.png" alt=""></div>
+                        <div class="notification-item-title">Технические работы Билайн</div>
+                        <div class="notification-item-date">24.01.2023 19:31</div>
+                    </div>
+                    <div class="notification-item">
+                        <div class="notification-item-icon"><img src="images/notification-alert.png" alt=""></div>
+                        <div class="notification-item-title">Какой то текст </div>
+                        <div class="notification-item-date">24.01.2023 19:31</div>
+                    </div>
+                    <div class="notification-item active">
+                        <div class="notification-item-icon"><img src="images/notification-alert.png" alt=""></div>
+                        <div class="notification-item-title">Обьявление которое не помещается целиком в этот блок</div>
+                        <div class="notification-item-date">24.01.2023 19:31</div>
+                    </div>
+                    <div class="notification-item">
+                        <div class="notification-item-icon"><img src="images/notification-alert.png" alt=""></div>
+                        <div class="notification-item-title">Технические работы Билайн</div>
+                        <div class="notification-item-date">24.01.2023 19:31</div>
+                    </div>
+                    <div class="notification-item active">
+                        <div class="notification-item-icon"><img src="images/notification-alert.png" alt=""></div>
+                        <div class="notification-item-title">Технические работы Билайн</div>
+                        <div class="notification-item-date">24.01.2023 19:31</div>
+                    </div>
+                    <div class="notification-item">
+                        <div class="notification-item-icon"><img src="images/notification-alert.png" alt=""></div>
+                        <div class="notification-item-title">Технические работы Билайн</div>
+                        <div class="notification-item-date">24.01.2023 19:31</div>
+                    </div>
+                </div>
+                <div class="notification-line"></div>
+                <a href="#" class="notification-more">Показать больше новостей</a>
 
+            </div>
+        </div>
         <div class="info">
             <div class="only-mobile-logo">
                 <img src="images/orange-logo.svg" alt="" class="logo-icon">
@@ -176,8 +230,8 @@
             </div>
         </div>
         <div class="nav-footer">
-            <div class="nav-footer-icon"><img src="images/notification.png" alt="" class="notification-icon" id="notificationIcon"><div class="notyDot"></div></div>
-            <div class="notification-block hide" id="notificatios">
+            <div class="nav-footer-icon" id="notificationIcon"><img src="images/notification.png" alt="" class="notification-icon"><div class="notyDot"></div></div>
+            <div class="notification-block hide" id="notifications">
                 <div class="notification-header">
                     <div class="notification-title">
                         Уведомления
@@ -973,10 +1027,6 @@
     const buttonNotifications = document.getElementById('notificationIcon');
 
     buttonNotifications.addEventListener("click", notifications);
-    function notifications() {
-        console.log('clicker');
-        document.getElementById('notificatios').classList.toggle('hide');
-    }
     function toggleMessages() {
         document.querySelector('.notification-events').classList.add('hide');
         document.querySelector('.notification-messages').classList.remove('hide');
@@ -1002,6 +1052,18 @@
             changeRow.classList.add('column');
         }
     });
+    document.addEventListener('DOMContentLoaded', function () {
+        const notificationIcon = document.getElementById('notificationIcon');
+        const notificationIconMob = document.getElementById('notificationIconMobile');
+
+        notificationIcon.addEventListener('click', function () {
+            document.getElementById('notifications').classList.toggle('hide');
+        });
+        notificationIconMob.addEventListener('click', function () {
+            document.getElementById('mobileNotifications').classList.toggle('hide');
+        });
+    });
+
 </script>
 </body>
 </html>

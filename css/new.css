@@ -11706,7 +11706,7 @@ table i {
     justify-content: flex-start;
     align-content: flex-start;
     border-radius: 13px;
-    background: #272727;
+    background: #efefef;
     padding: 0;
     box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
     z-index: 999;
@@ -11714,6 +11714,31 @@ table i {
     overflow: hidden;
     transform: translate(-54%, 52%);
 }
+.theme-dark .notification-block {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    border-radius: 13px;
+    background: #323232;
+    padding: 0;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+    z-index: 999;
+    width: 392px;
+    overflow: hidden;
+    transform: translate(-54%, 52%);
+}
+
+.notification-block.mobile {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    height: auto;
+    z-index: 99999999;
+    top: 40px!important;
+}
+
 .notification-header {
     padding: 13px;
     width: 100%;
@@ -11723,14 +11748,21 @@ table i {
     justify-content: center;
     align-content: center;
     gap: 10px;
+    background: #efefef;
+}
+.theme-dark .notification-header {
     background: #222222;
 }
+
 .notification-title {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: #555;
     text-align: center;
+}
+.theme-dark .notification-title {
+    color: #FFFFFF;
 }
 .notification-subtitle {
     font-weight: 400;
@@ -11738,6 +11770,9 @@ table i {
     line-height: 24px;
     color: #B8B8B8;
     text-align: center;
+}
+.theme-dark .notification-subtitle {
+    color: #565656;
 }
 .notification-body {
     display: flex;
@@ -11777,6 +11812,7 @@ table i {
     transition: background-color 0.3s ease;
     cursor: pointer;
     border: 1px solid transparent;
+    background: #a3a3a3;
 }
 .notification-btn.active {
     background: #525252;
@@ -11808,6 +11844,9 @@ table i {
     background-color: #3b3b3b;
 }
 .notification-item.active {
+    background: #ddd;
+}
+.theme-dark .notification-item.active {
     background: #1D1D1D;
 }
 .notification-item-icon {
@@ -11825,11 +11864,14 @@ table i {
     font-weight: 400;
     font-size: 12px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: #7c7c7c;
     width: 60%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+.theme-dark .notification-item-title {
+    color: #fff;
 }
 .notification-item-date {
     font-weight: 400;
@@ -11843,7 +11885,7 @@ a.notification-more {
     font-size: 12px;
     line-height: 24px;
     text-align: center;
-    color: #C4C4C4;
+    color: #7c7c7c;
     margin-top: 10px;
 }
 
@@ -12555,7 +12597,7 @@ body {
 }
 
 .filters.hlop {
-    z-index: 999;
+    z-index: 0; /*фикс нахлеста фильтров на уведомления*/
     width: 250px;
     height: 100vh;
     position: absolute;
@@ -13081,8 +13123,8 @@ a {
 #nav-tab {
     margin: 0 auto;
     border-bottom: none;
+    overflow-x: auto;
 }
-
 #nav-tab .nav-item {
     margin-bottom: 0;
     font-size: 10px;
@@ -13788,6 +13830,10 @@ body.theme-dark .mobile-menu-close {
 
 body.theme-dark .mobile-menu .nav-footer {
     filter: invert(0);
+    bottom: 80px;
+    flex-direction: row-reverse;
+}
+body .mobile-menu .nav-footer {
     bottom: 80px;
     flex-direction: row-reverse;
 }
@@ -16376,7 +16422,7 @@ body.theme-dark span.dyn-title {
         right: 0;
         box-sizing: border-box;
         border-radius: 0;
-        background-color: #212121;
+        background-color: #fff;
         justify-content: center;
         align-items: center;
         padding: 5px;
@@ -16385,6 +16431,7 @@ body.theme-dark span.dyn-title {
         box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
         z-index: 999999;
     }
+
 
     .nav-item:hover .nav-text {
         color: #f15a24;
@@ -16775,7 +16822,7 @@ body.theme-dark span.dyn-title {
     }
 
     .cap {
-        display: none;
+        /*display: none;*/
     }
 
     .nav-filter .circle-btn-group {
@@ -16957,6 +17004,7 @@ body.theme-dark span.dyn-title {
         max-width: 52px;
         gap: 10px;
         min-height: 45px;
+        margin: 7px 15px;
     }
 
     .img-block {
@@ -17122,6 +17170,20 @@ body.theme-dark span.dyn-title {
         color: #fff;
         padding: 12px;
     }
+    .notification-body .block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-height: 45vh;
+        height: 100%;
+        overflow: auto;
+    }
+    .notification-item {
+        min-height: 40px;
+    }
+
 
 }
 @media screen and (max-width: 767px) {
@@ -17330,7 +17392,6 @@ body.theme-dark span.dyn-title {
         top: 0!important;
         left: 0;
         padding: 0;
-        background-color: #000;
         margin-top: 20px;
         height: 60px;
         right: 0;
